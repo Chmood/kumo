@@ -1,0 +1,91 @@
+// Post-footer content: 
+// - legal menu
+// - copyright text
+// - made-by link
+
+.footer-legal-menu,
+.footer-copyright,
+.footer-made-by {
+  text-align: center;
+}
+
+// LEGAL MENU
+
+.footer-legal-menu {
+  @include reset-list();
+  padding-left: $gutter-half;
+  margin-bottom: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > .menu-item:not(.menu-item--passive) {
+    display: block;
+    flex-basis: 100%;
+    margin-bottom: 0.4rem; // Touche zone spacing best practice
+    
+    > .menu-item-link {
+      display: inline-block;
+      line-height: 4.4rem;
+
+      @include hocus() {
+        background-color: transparent;
+        color: $color-primary;
+      }
+    }
+
+    @include bp('sm') {
+      flex-basis: auto;
+
+      &:not(:last-child)::after {
+        content: "//";
+        color: $color-primary;
+        font-weight: $font-weight-bold;
+        display: inline-block;
+        @include h-margin($gutter-eighth);
+      }
+    }
+    
+  }
+}
+
+// COPYRIGHT
+
+.footer-copyright {
+
+  > span {}
+}
+
+// MADE BY LINK
+
+.footer-made-by {
+  > span {
+    font-style: italic;
+  }
+}
+
+// Maker link
+
+.maker-link {
+  display: inline-block;
+  vertical-align: sub;
+  font-size: 0;
+  transition: all 0.25s $ease-bump;
+
+  opacity: 0.8;
+  transform: scale3d(0.8,0.8,1) rotateZ(0);
+
+  > svg {
+    height: 2.4rem;
+    position: relative;
+    top: 0.5rem;
+    //TODO: style inside the SVG
+  }
+
+  @include hocus() {
+    opacity: 1;
+    transform: scale3d(1,1,1) rotateZ(9deg);
+    // @include shadow(2);
+  }
+}

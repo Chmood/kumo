@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  min-height: 100vw; // square ratio
+  overflow: hidden;
+  
+  @include bp('md') {
+    min-height: 56.25vw; // 16:9 ratio
+  }
+
+  @include bp('lg') {
+    min-height: 40vw;
+  }
+
+  .has-transparent-header.home & {
+    min-height: 100vh;
+  }
+}
+
+.hero__img {
+  @include absolute-full();
+  @include bg-cover();
+
+  > .hero-img {
+    object-fit: cover;
+  }
+}
+
+.hero__overlay {
+  @include absolute-full();
+  background-color: rgba(255,255,255,0.5);
+}
+
+.hero__content {
+  @include absolute-center();
+  text-align: center;
+  width: 90%;
+
+  @include bp('sm') {
+    width: 75%;
+  }
+
+  @include bp('md') {
+    width: 50%;
+  }
+}
+
+.hero__slogan {
+  // @include h(1);
+  font-size: $font-size-biggest;
+  line-height: $line-height-smaller;
+  color: black;
+  // font-weight: $font-weight-light;
+  font-weight: $font-weight-semibold;
+  // text-shadow: 0.2rem 0.2rem 0 white;
+  // text-transform: uppercase;
+  margin-bottom: $gutter;
+
+  @include bp('md') {
+    margin-bottom: $gutter-and-half;
+  }
+}
+
+.hero__form {
+
+  @include bp('lg') {
+    @include h-margin(20%);
+  }
+  @include bp('xl') {
+    @include h-margin(25%);
+  }
+
+  .input {
+
+    input {
+      background-color: transparent;
+      border-color: black;
+      // padding: ($gutter-eighth * 3) ($gutter-quarter * 3);
+      // font-size: $font-size-big;
+      // height: auto;
+      border-width: 0.2rem;
+      line-height: 1;
+      transition: all 0.25s;
+  
+      @include hocus() {
+        background-color: white;
+        border-color: white;
+      }
+    }
+  
+    .input-after {
+      margin-left: $gutter-quarter;
+    }
+  }
+}
+
+.hero__btn {
+  @include bp('md') {
+    padding: ($gutter-eighth * 3) ($gutter-quarter * 3);
+    font-size: $font-size-big;
+  }
+}
+
+.hero__scroll-down {
+  // !important needed to override .ripple styling
+  position: absolute !important;
+  bottom: $gutter;
+  left: 50%;
+  // transform: translateX(-50%);
+}
+

@@ -1,0 +1,28 @@
+/* SEARCH */
+
+.searchform {
+  display: flex;
+
+  .searchform__input {
+    height: $navbar-btn-size;
+    line-height: $navbar-btn-size;
+    flex-grow: 1;
+    border-right: none;
+  }
+
+  .searchform__submit {
+    height: $navbar-btn-size;
+    border: 0.1rem solid $color-primary;
+    border-left: none;
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+
+    &[disabled] {
+      // don't submit less than 3 chars - see JS
+      background-color: white;
+      color: $gray-light;
+      border: 0.1rem solid $gray-light;
+      border-left: none;
+    }
+  }
+}

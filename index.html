@@ -1,0 +1,499 @@
+<html>
+
+<head>
+  <!-- Webpack auto-inject CSS -->
+</head>
+
+<body class="debug debug--breakpoints has-sticky-header has-compressible-header has-compressible-header-logo-swap has-transparent-header has-fixed-width-containers has-scroll-top" data-config="">
+
+  <!-- SITE-WRAPPER -->
+
+  <div class="site-wrapper">
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+      <!-- PRE-HEADER - TOPBAR -->
+
+      <section class="wrapper wrapper--pre-header">
+
+        <div class="topbar" id="topbar">
+          <div class="bar-wrapper container">
+
+            <!-- TOPBAR SECONDARY MENU -->
+
+            <div class="topbar-menu">
+              <nav class="menu-secondary hidden-collapsed" role="navigation">
+                <ul class="nav">
+
+                  <!-- Menu item -->
+                  <li class="menu-item menu-item--dropdown">
+                    <a href="#" class="menu-item-link">
+                      <span>Item 1</span>
+                    </a>
+                  </li>
+
+                  <!-- Menu item -->
+                  <li class="menu-item menu-item--dropdown">
+                    <a href="#" class="menu-item-link">
+                      <span>Item 2</span>
+                    </a>
+                  </li>
+
+                  <!-- Menu item -->
+                  <li class="menu-item menu-item--dropdown">
+                    <a href="#" class="menu-item-link">
+                      <span>Item 3</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+
+            <!-- SEARCH -->
+
+            <div class="topbar-search">
+              <form role="search" method="get" id="searchform" class="searchform" action="{{ site.url }}">
+                <label class="searchform__label sr-only" for="s">Rechercher&nbsp;:</label>
+                <input class="searchform__input" type="text" value="" name="s" id="s" placeholder="Mot-clé, produit...">
+                <button type="submit" class="searchform__submit btn btn-primary" disabled><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+
+            <!-- SOCIAL LINKS -->
+
+            <div class="topbar-social-links hidden-collapsed">
+
+              <section class="rrssb-buttons rrssb-buttons--mini">
+                <div class="rrssb-button ssb-small twitter">
+                  <a href="#" target="_blank" title="Twitter">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="#icon-{{ network|lower }}" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </section>
+
+              <section class="rrssb-buttons rrssb-buttons--mini">
+                <div class="rrssb-button ssb-small github">
+                  <a href="#" target="_blank" title="Github">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="#icon-{{ network|lower }}" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </section>
+
+              <section class="rrssb-buttons rrssb-buttons--mini">
+                <div class="rrssb-button ssb-small reddit">
+                  <a href="#" target="_blank" title="Reddit">
+                    <span class="icon">
+                      <svg>
+                        <use xlink:href="#icon-{{ network|lower }}" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </section>
+
+            </div><!-- ./topbar-social-links -->
+
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+
+      </section>
+
+      <!-- MAIN HEADER -->
+
+      <section class="wrapper wrapper--header">
+
+        <nav class="navbar" role="navigation">
+          <div class="bar-wrapper container">
+
+            <!-- LOGO -->
+
+            <div class="navbar-header">
+              <a class="navbar-logo" href="/" rel="home">
+                <svg class="logo logo--mobile" viewBox="0 0 44 44">
+                  <use xlink:href="#logo-mobile"></use>
+                </svg>
+                <svg class="logo logo--tablet" viewBox="0 0 156 44">
+                  <use xlink:href="#logo-tablet"></use>
+                </svg>
+                <svg class="logo logo--desktop" viewBox="0 0 124 110">
+                  <use xlink:href="#logo-desktop"></use>
+                </svg>
+              </a>
+            </div>
+
+            <!-- MAIN MENU -->
+
+            <nav class="navbar-menu dropdown-wrapper dropdown-wrapper--panel dropdown-wrapper--panel-menu">
+              <ul class="menu-primary dropdown-menu nav">
+
+                <!-- Primary menu, always visible -->
+
+                <!-- Menu item -->
+                <li class="menu-item menu-item--dropdown">
+                  <a href="#" class="menu-item-link">
+                    <span>Item 1</span>
+                  </a>
+                </li>
+
+                <!-- Menu item -->
+                <li class="menu-item menu-item--dropdown">
+                  <a href="#" class="menu-item-link">
+                    <span>Item 2</span>
+                  </a>
+                </li>
+
+                <!-- Menu item -->
+                <li class="menu-item menu-item--dropdown">
+                  <a href="#" class="menu-item-link">
+                    <span>Item 3</span>
+                  </a>
+                </li>
+
+                <!-- Secondary menu for mobile only -->
+
+                <li class="divider hidden-expanded"></li>
+
+                <!-- Menu item -->
+                <li class="menu-item menu-item--dropdown">
+                  <a href="#" class="menu-item-link">
+                    <span>Item 1</span>
+                  </a>
+                </li>
+
+                <!-- Menu item -->
+                <li class="menu-item menu-item--dropdown">
+                  <a href="#" class="menu-item-link">
+                    <span>Item 2</span>
+                  </a>
+                </li>
+
+                <!-- Menu item -->
+                <li class="menu-item menu-item--dropdown">
+                  <a href="#" class="menu-item-link">
+                    <span>Item 3</span>
+                  </a>
+                </li>
+
+                <!-- SOCIAL LINKS -->
+
+                <li class="divider hidden-expanded"></li>
+
+                <li class="menu-item menu-item--passive hidden-expanded">
+                  <div class="menu-item-link">
+                    <span>Suivez-nous&nbsp;!</span>
+                  </div>
+                </li>
+
+                <div class="navbar-social-links hidden-expanded">
+
+                  <section class="rrssb-buttons rrssb-buttons--mini">
+                    <div class="rrssb-button ssb-small twitter">
+                      <a href="#" target="_blank" title="Twitter">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#icon-{{ network|lower }}" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </section>
+
+                  <section class="rrssb-buttons rrssb-buttons--mini">
+                    <div class="rrssb-button ssb-small github">
+                      <a href="#" target="_blank" title="Github">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#icon-{{ network|lower }}" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </section>
+
+                  <section class="rrssb-buttons rrssb-buttons--mini">
+                    <div class="rrssb-button ssb-small reddit">
+                      <a href="#" target="_blank" title="Reddit">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#icon-{{ network|lower }}" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </section>
+
+                </div>
+
+              </ul>
+            </nav>
+
+            <!-- ACTION BUTTONS -->
+
+            <div class="navbar-footer">
+              <ul class="menu-buttons">
+
+                <!-- Search button (mobile only) -->
+
+                <li class="menu-item menu-item--button menu-item--search hidden-expanded">
+                  <button type="button" class="menu-item-link" data-toggle="#topbar, body" data-toggle-classname="topbar-expanded">
+                    <span class="sr-only">Toggle search</span>
+                    <i class="fa fa-fw  fa-search"></i>
+                  </button>
+                </li>
+
+                <!-- Hamburger button (mobile only) -->
+
+                <li class="menu-item menu-item--button menu-item--hamburger hidden-expanded">
+                  <button type="button" class="menu-item-link" data-panel-toggle="data-panel-toggle" data-panel-target="panel-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <div class="hamburger-wrapper">
+                      <div class="hamburger"></div>
+                    </div>
+                  </button>
+                </li>
+
+                <!-- Toggle topbar on (collapsed) desktop navbar (desktop only) -->
+
+                <li class="menu-item menu-item--button menu-item--compress visible-expanded">
+                  <button type="button" class="menu-item-link" data-toggle="body" data-toggle-classname="header-uncompressed">
+                    <span class="sr-only">Toggle topbar</span>
+                    <i class="fa fa-fw  fa-plus"></i>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+
+          </div><!-- End .container -->
+        </nav>
+
+      </section>
+
+      <!-- POST-HEADER -->
+
+      <section class="wrapper wrapper--post-header">
+      </section>
+
+    </header><!-- end .site-header -->
+
+    <!-- SITE-CONTENT -->
+
+    <main class="site-content">
+
+      <!-- MAIN -->
+      <div class="site-main-content wrapper wrapper--content" role="main">
+
+        <!-- BREADCRUMB -->
+        <section class="wrapper wrapper--breadcrumb">
+          <div class="container">
+            <nav class="breadcrumb" role="navigation">
+              <ol>
+                <li><a href="#">Home</a> » </li>
+                <li><a href="#">Category</a> » </li>
+                <li><a href="#">Section</a> » </li>
+                <li>Current page</li>
+              </ol>
+            </nav>
+          </div>
+        </section>
+
+        <!-- MAIN CONTENT -->
+        <section class="wrapper wrapper--main-content">
+          <div class="container">
+            <div class="main-content">
+              <h1>Hello World</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus cupiditate laborum magni incidunt natus
+                soluta, odio fugit. Tempora labore provident rem qui voluptatibus ipsam quae expedita vel quaerat!
+                Dolor, tempora?
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </main><!-- end .site-content -->
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+      <!-- PRE-FOOTER -->
+
+      <section class="wrapper wrapper--pre-footer">
+      </section>
+
+      <!-- MAIN FOOTER -->
+
+      <section class="wrapper wrapper--footer">
+        <div class="container">
+          <div class="row">
+
+            <!-- Footer zone 1 -->
+            <div class="col-sm-6 col-md-12 col-lg-3">
+              {{ widgets_footer_1 }}
+            </div>
+
+            <!-- Footer zone 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              {{ widgets_footer_2 }}
+            </div>
+
+            <!-- Footer zone 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              {{ widgets_footer_3 }}
+            </div>
+
+            <!-- Footer zone 4 -->
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              {{ widgets_footer_4 }}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POST-FOOTER -->
+
+      <section class="wrapper wrapper--post-footer">
+        <div class="container">
+
+          <div class="row">
+
+            <ul class="footer-legal-menu">
+
+              <!-- Legal menu item -->
+              <li class="">
+                <a href="#" class="menu-item-link">
+                  <span>Legal 1</span>
+                </a>
+              </li>
+
+              <!-- Legal menu item -->
+              <li class="">
+                <a href="#" class="menu-item-link">
+                  <span>Legal 2</span>
+                </a>
+              </li>
+
+              <!-- Legal menu item -->
+              <li class="">
+                <a href="#" class="menu-item-link">
+                  <span>Legal 3</span>
+                </a>
+              </li>
+
+            </ul>
+
+            <div class="footer-copyright">
+              <span>Copyright {{ site.name }} &copy; 2017 - {{"now"|date('Y')}}</span>
+            </div>
+
+            <div class="footer-made-by">
+              <span>Design et réalisation&nbsp;:</span>
+              <a href="https://www.webcd.fr" target="_blank" class="maker-link">Webcd<svg viewBox="0 0 633 156"><use xlink:href="#logo-webcd"></use></svg></a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </footer><!-- end .site-footer -->
+
+  </div><!-- end .site-wrapper -->
+
+  <!-- OVERLAY -->
+
+  <div class="overlay" id="overlay-panels"></div>
+
+  <!-- SCROLL TO TOP BUTTON -->
+
+  <div class="scroll-btn btn scroll-btn--up" data-scroll="body">
+    <div class="sr-only">Scroll to top</div>
+  </div>
+
+  <!-- PAGE TRANSITION -->
+
+  <!--
+  <div class='page-transition-in active'></div>
+  <div class='page-transition-out'></div>
+  -->
+
+  <!-- INLINE SVG -->
+
+  <!--
+  <div class="inline-svg">
+    {% include 'sprite.symbol.svg.twig' %}
+    {% include 'social-networks-svg.twig' %}
+  </div>
+  -->
+
+  <!-- DEBUG ZONE -->
+
+  <div class="debug-zone">
+    <div class="debug-zone__toggle">
+      <button class="btn btn-ctrl" data-toggle="body" data-toggle-classname="debug-zone-active">
+        <span class="sr-only">Toggle debug zone</span>
+      </button>
+    </div>
+    <div class="debug-zone__item debug-zone__item--bp"></div>
+  </div>
+
+  <!-- Font Awesome 5 -->
+
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+    crossorigin="anonymous"></script>
+
+  <!-- MAIN JS SCRIPT -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
